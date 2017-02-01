@@ -20,7 +20,7 @@
             <nav class="navbar">
 
                 <div class="logo">
-                    <h3><span style="font-weight:bolder">Binary</span> by TEMPLATED</h3>
+                    <h3><strong>Binary</strong> by TEMPLATED</h3>
                 </div>
 
                 <div class="botao">

@@ -1,0 +1,472 @@
+html{
+    margin-top: 0px !important;
+}
+
+header{
+    top: 0;
+    padding-top: 0;
+    margin-top: 0;
+    background: #379ADC;
+    height: 700px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.linha1{
+    margin-top: 30px;
+    margin-right: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.linha{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        margin-right: 30px;
+}
+
+.clear{
+    clear: both;
+}
+body{
+    font-size: 17px;
+    font-family: Helvetica;
+}
+
+.navbar{
+    background-color: rgba(28, 28, 28, 1);
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    border-radius: 0px;
+    right: 0;
+    z-index: 1000;
+
+}
+
+.botao{
+    float: right;
+    color: white;
+    width: 250px;
+    position: absolute;
+    transition: 1s;
+    right: 0;
+    top: 0;
+}
+
+.botao p{
+    text-align: right;
+    padding: 0;
+    margin: 24px;
+}
+
+.menu{
+    float: right;
+    height: 900px;
+    width: 0px;
+    background-color: rgba(28, 28, 28, 1);
+    position: absolute;
+    transition: 1s;
+    right: 0;
+    top: 0;
+    -webkit-box-shadow: -3px 4px 22px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 4px 22px -2px rgba(0,0,0,0.75);
+    box-shadow: -3px 4px 22px -2px rgba(0,0,0,0.75);
+}
+
+/** Para abrir o menu usando somente o hover
+
+.botao:hover .menu{
+    width: 250px;
+    transition: 1s;
+}
+
+*/
+
+/* Para abrir o menu clicando */
+
+.botaoMenu{
+    z-index: 1000;
+    position: absolute;
+}
+
+#navicon:checked ~ .menu{
+    width: 250px;
+}
+.botaoMenu::after{
+    z-index: 1000;
+    content:'MENU';
+    padding: 25px 0px 20px 175px;
+    position: absolute;
+}
+
+#navicon:checked + label::after{
+    content:'X';
+}
+
+#navicon{
+    display: none;
+}
+
+/*fim menu clicavel*/
+
+.opcoes{
+    padding-top: 30px;
+    right: 0;
+}
+
+.opcoes li{
+    list-style: none;
+    padding: 10px;
+}
+
+.opcoes a{
+    text-decoration: none;
+    color: rgba(211, 211, 211, 1);
+    transition: 0.3s;
+}
+
+.opcoes a:hover{
+    color: rgba(211, 211, 211, 0.6);
+    transition: 0.3s;
+}
+
+.logo h3{
+    color: white;
+    padding-top: 7px;
+    margin: 17px;
+}
+
+.titulo{
+    padding: 250px 150px;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo h2{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 40px;
+    line-height: 70px;
+}
+
+.titulo a{
+    margin: 20px 375px;
+    padding: 15px 45px;
+    font-size: 23px;
+    font-weight: bolder;
+    color: white;
+    border: 2px solid;
+    border-color: rgba(97, 175, 227, 1);
+    transition: 0.3s;
+}
+
+.titulo a:hover{
+    background: rgba(97, 175, 227, 0.3);
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+/** SECOES ------------------------------------------------------------------------- **/
+
+/*seção1 ------------------------------------------------------------------------- **/
+
+.metadetexto1{
+    height: 700px;
+    padding: 100px 100px 150px 150px;
+    text-align: right;
+}
+
+.metadetexto1 h2{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: rgba(28, 188, 156, 1);
+}
+
+.metadetexto1 h2:hover{
+    text-decoration: underline;
+}
+
+.date1{
+    font-style: italic;
+    padding: 13px;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.date1 a{
+    color: rgba(28, 188, 156, 1);
+}
+
+.date1 a:hover{
+    color: rgba(28, 188, 156, 1);
+}
+
+.content1{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.readmore1{
+    padding: 13px 35px;
+    font-size: 17px;
+    font-weight: bolder;
+    color: rgba(28, 188, 156, 1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.readmore1:hover{
+    background: rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: rgba(28, 188, 156, 1);
+    transition: 0.3s;
+}
+
+.metadefoto1{
+    background-image: url(../image/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
+}
+
+/*seção2 ------------------------------------------------------------------------- **/
+
+.metadetexto2{
+    height: 700px;
+    padding: 100px 150px 150px 100px;
+    text-align: left;
+    background-color: rgba(28, 188, 156, 1);
+}
+
+.metadetexto2 h2{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.metadetexto2 h2:hover{
+    text-decoration: underline;
+}
+
+.date2{
+    font-style: italic;
+    padding: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.date2 a{
+    color: rgba(255, 255, 255, 1);
+}
+
+.date2 a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.content2{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.readmore2{
+    padding: 13px 35px;
+    font-size: 17px;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+.readmore2:hover{
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    transition: 0.3s;
+}
+
+.metadefoto2{
+    background-image: url(../image/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
+}
+
+/*seção3 ------------------------------------------------------------------------- **/
+
+.metadetexto3{
+    height: 700px;
+    padding: 100px 100px 150px 150px;
+    text-align: right;
+}
+
+.metadetexto3 h2{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: rgba(155, 89, 182, 1);
+}
+
+.metadetexto3 h2:hover{
+    text-decoration: underline;
+}
+
+.date3{
+    font-style: italic;
+    padding: 13px;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.date3 a{
+    color: rgba(155, 89, 182, 1);
+}
+
+.date3 a:hover{
+    color: rgba(155, 89, 182, 1);
+}
+
+.content3{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.readmore3{
+    padding: 13px 35px;
+    font-size: 17px;
+    font-weight: bolder;
+    color: rgba(155, 89, 182, 1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.readmore3:hover{
+    background: rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: rgba(155, 89, 182, 1);
+    transition: 0.3s;
+}
+
+.metadefoto3{
+    background-image: url(../image/img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
+}
+
+/*seção4 ------------------------------------------------------------------------- **/
+
+.metadetexto4{
+    height: 700px;
+    padding: 100px 150px 150px 100px;
+    text-align: left;
+    background-color: rgba(155, 89, 182, 1);
+}
+
+.metadetexto4 h2{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.metadetexto4 h2:hover{
+    text-decoration: underline;
+}
+
+.date4{
+    font-style: italic;
+    padding: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.date4 a{
+    color: rgba(255, 255, 255, 1);
+}
+
+.date4 a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.content4{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.readmore4{
+    padding: 13px 35px;
+    font-size: 17px;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+.readmore4:hover{
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    transition: 0.3s;
+}
+
+.metadefoto4{
+    background-image: url(../image/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
+}
+
+
+/* FOOTER ---------------------------------------------------------*/
+
+
+footer{
+    height: 250px;
+    background-color: rgba(28, 28, 28, 1);
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+footer i{
+    padding: 70px 10px 30px 10px;
+}
+
+footer p{
+    padding: 30px 10px 10px 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+}
+
+footer a{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer a:hover{
+    color: rgba(255, 255, 255, 0.8);
+}

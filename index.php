@@ -3,15 +3,30 @@
 ?>
             
 <section>
+<?php query_posts("showposts=1&paged=$paged"); ?> <!--puxou a publicação do blog-->
+<?php if(have_posts()): ?>
+    <?php while(have_posts()): ?>
 
+    <?php the_post(); ?>    
+            
     <div class="col-md-6 metadetexto1">
-        <h2>Ipsum lorem sed magna</h2>
+        <h2><?php the_title();?></h2>
         <p class="date1">3 days ago by <a href="#">Jane Doe</a></p>
-        <p class="content1">Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
+        <p class="content1"><?php echo the_content(); ?></p>
         <a href="#" class="readmore1">Read More</a>
     </div>
 
-    <div class="col-md-6 metadefoto1"></div>
+    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail'); ?>
+
+    <?php if ($image):?>
+    <div class="col-md-6 metadefoto1" style="background-image: url(<?php echo $image[0]; ?>)"></div>
+    
+                <?php else: ?>
+                <div class="minhaImagemfundo" style="background-image: url(<?php bloginfo('template_directory'); ?>/images/imagemCritica.png)"></div>
+            <?php endif ?>
+        </div>
+        <?php endwhile ?>
+    <?php endif ?> 
     <div class="clear"></div>    
 
 </section>

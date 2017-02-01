@@ -1,7 +1,10 @@
 html{
     margin-top: 0px !important;
 }
-
+.container-fluid {
+    padding-right: 0px; 
+    padding-left: 0px;
+}
 header{
     top: 0;
     padding-top: 0;
@@ -209,7 +212,7 @@ body{
 }
 
 .content1{
-    padding-top: 15px;
+    padding-top: 0px;
     padding-bottom: 30px;
     line-height: 30px;
     color: rgba(0, 0, 0, 0.6);
@@ -232,7 +235,6 @@ body{
 }
 
 .metadefoto1{
-    background-image: url(../image/img1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -300,7 +302,6 @@ body{
 }
 
 .metadefoto2{
-    background-image: url(../image/img2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -367,7 +368,6 @@ body{
 }
 
 .metadefoto3{
-    background-image: url(../image/img3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -435,7 +435,6 @@ body{
 }
 
 .metadefoto4{
-    background-image: url(../image/img1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
